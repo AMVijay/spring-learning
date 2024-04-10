@@ -13,12 +13,11 @@ public class HelloWorldController {
         // return "Hello ," + input;
 
         return new Callable<String>() {
-                @Override
-                public String call() throws Exception {
-                    Thread.sleep(8000); //this will cause a timeout
-                    return "Hello ," + input;
-                }
-            };
-        }
+            @Override
+            public String call() throws Exception {
+                Thread.sleep(8000); //this will cause a timeout
+                return "Hello ," + input;
+            }
+        };
     }
 }
